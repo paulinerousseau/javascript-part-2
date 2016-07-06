@@ -62,6 +62,18 @@ var sq = numbers.map(function(num){
 
 console.log(sq);
 
+//square object
+
+var obj = [{value:4}, {value:6}, {value:8}]
+var sq = obj.map(function(obj){
+    return obj.value*obj.value;
+    
+});
+
+console.log(sq);
+
+
+
 
 
  
