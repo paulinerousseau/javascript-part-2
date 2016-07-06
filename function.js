@@ -72,6 +72,43 @@ var sq = obj.map(function(obj){
 
 console.log(sq);
 
+//operationMaker
+
+function operationMaker(operation){
+    if (operation==="add"){
+       return function(num1,num2) {
+           return num1+num2;
+       }
+       
+    }else if (operation==="substract"){
+        return function (num1,num2){
+            return num1-num2;
+        }
+        
+    }else if (operation==="mult"){
+        return function (num1,num2){
+            return num1*num2;
+        }
+    }else (operation==="div"){
+        return function (num1,num2){
+            return num1/num2;
+        }
+    }
+    
+};
+var addOperation=operationMaker("add");
+console.log (addOperation(2,3));
+
+var subOperation=operationMaker("substract");
+console.log (subOperation(4,6));
+
+var multOperation=OperationMaker("mult");
+console.log (subOperation (6,8));
+
+
+var subOperation=OperationMaker("div");
+console.log (divOperation(4,8));
+
 
 
 
