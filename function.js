@@ -53,4 +53,18 @@ objects.sort(function(person1, person2){
 console.log(objects);
  
  
+//square 
+var numbers = [1,9,7];
+var sq = numbers.map(function(num){
+    return num*num;
+    
+});
+
+console.log(sq);
+
+
+
+ 
+ 
+ 
    
