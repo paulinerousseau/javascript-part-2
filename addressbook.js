@@ -14,12 +14,9 @@ function email (address, type){
     
         }else{
             this.type==="other";
-        }
     };
         
         
-
-    
 }
 
 person.prototype = {
